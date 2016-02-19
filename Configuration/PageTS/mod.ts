@@ -3,7 +3,7 @@
 ######################
 
 mod.SHARED {
-  defaultLanguageFlag = gb.gif
+  defaultLanguageFlag = gb
   defaultLanguageLabel = English
 }
 
