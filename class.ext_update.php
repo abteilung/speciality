@@ -1,8 +1,8 @@
 <?php
-namespace Ecodev\Speciality;
+namespace Abteilung\Speciality;
 
 /*
- * This file is part of the Ecodev\Speciality project under GPLv2 or later.
+ * This file is part of the Abteilung\Speciality project under GPLv2 or later.
  *
  * For the full copyright and license information, please read the
  * LICENSE.md file that was distributed with this source code.

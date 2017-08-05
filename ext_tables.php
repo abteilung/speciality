@@ -14,23 +14,23 @@ TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
 ');
 
 // New icons for the BE
-if (TYPO3_MODE === 'BE') {
-
-    $icons = array('category', 'comment', 'storage', 'news', 'people');
-    foreach ($icons as $icon) {
-
-        \TYPO3\CMS\Backend\Sprite\SpriteManager::addTcaTypeIcon(
-            'pages',
-            'contains-' . $icon,
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('speciality') . 'Resources/Public/Backend/Icons/' . $icon . '.png');
-
-        $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = array(
-            ucfirst($icon),
-            $icon,
-            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('speciality') . 'Resources/Public/Backend/Icons/' . $icon . '.png'
-        );
-    }
-}
+// if (TYPO3_MODE === 'BE') {
+//
+//     $icons = array('category', 'comment', 'storage', 'news', 'people');
+//     foreach ($icons as $icon) {
+//
+//         \TYPO3\CMS\Backend\Sprite\SpriteManager::addTcaTypeIcon(
+//             'pages',
+//             'contains-' . $icon,
+//             \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('speciality') . 'Resources/Public/Backend/Icons/' . $icon . '.png');
+//
+//         $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = array(
+//             ucfirst($icon),
+//             $icon,
+//             \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('speciality') . 'Resources/Public/Backend/Icons/' . $icon . '.png'
+//         );
+//     }
+// }
 
 # Use Flux Core API for registering extension provider.
 \FluidTYPO3\Flux\Core::registerProviderExtensionKey('speciality', 'Page');
